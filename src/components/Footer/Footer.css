@@ -1,0 +1,32 @@
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: white;
+  font-size: 1.6rem;
+  background-color: #282c34;
+}
+
+.footer__link {
+  position: relative;
+
+}
+
+.footer__link::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -4px;
+  max-height: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: max-height 0.2s;
+}
+
+.footer__link:hover::after {
+  max-height: 100%;
+}
